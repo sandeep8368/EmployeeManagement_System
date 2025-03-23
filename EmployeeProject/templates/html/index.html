@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body><div class="main">
+        <h1>this is django project....</h1>
+        <h2>{% for i in emp %}</h2>
+        <h2>{{i.name}}</h2>
+        <h2>{{i.phome}}</h2>
+        <h2>{{i.email}}</h2>
+        <h2>{{i.addr}}</h2>
+        <h2>{% endfor %}</h2>
+    </div>
+</body>
+</html>
